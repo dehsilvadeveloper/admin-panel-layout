@@ -24,7 +24,7 @@ To get started with this project, follow these steps:
 - Clone this repository:
 
 ```
-git clone https://github.com/dehsilvadeveloper/admin-panel-layout.git
+git clone git@github.com:dehsilvadeveloper/admin-panel-layout.git
 ```
 
 - Open the project folder.
