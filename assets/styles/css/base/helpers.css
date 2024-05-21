@@ -61,7 +61,51 @@
   || Text
 */
 
-.sideways-text {
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-sideways {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*
+  || Text colors
+*/
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.text-warning {
+  color: #ffc107;
 }
