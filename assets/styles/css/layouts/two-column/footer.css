@@ -1,0 +1,22 @@
+/*
+---------------------------------------------------
+  FOOTER
+---------------------------------------------------
+*/
+
+footer {
+  align-items: center;
+  background-color: var(--footer-background-color);
+  display: flex;
+  color: var(--footer-color);
+  justify-content: center;
+  padding: 0.125em 0.625em 0.125em 0.625em;
+}
+
+/* Medium devices and up (landscape tablets, laptops, desktops, large laptops and etc) */
+@media all and (min-width: 768px) {
+  footer {
+    order: 3;
+    width: 100vw;
+  }
+}

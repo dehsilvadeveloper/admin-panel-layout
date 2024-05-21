@@ -1,0 +1,24 @@
+/*
+---------------------------------------------------
+  SIDEBAR
+---------------------------------------------------
+*/
+
+aside.left-sidebar {
+  background-color: var(--sidebar-background-color);
+  color: var(--sidebar-color);
+  padding: 0.625em;
+}
+
+aside.left-sidebar a {
+  color: var(--sidebar-link-color);
+  font-weight: bold;
+}
+
+/* Medium devices and up (landscape tablets, laptops, desktops, large laptops and etc) */
+@media all and (min-width: 768px) {
+  aside.left-sidebar {
+    flex: 0 0 15em; /* Refer to "flex-grow", "flex-shrink" and "flex-basis", in this exact order */
+    order: 1;
+  }
+}

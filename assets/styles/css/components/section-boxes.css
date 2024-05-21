@@ -1,0 +1,23 @@
+/*
+---------------------------------------------------
+  SECTION BOXES
+---------------------------------------------------
+*/
+
+.section-box {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.section-box .section-box-header h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.section-box .section-box-body {
+  margin-left: 10px;
+}

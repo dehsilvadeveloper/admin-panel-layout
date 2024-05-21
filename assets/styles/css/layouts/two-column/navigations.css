@@ -1,0 +1,58 @@
+/*
+---------------------------------------------------
+  NAVIGATIONS
+---------------------------------------------------
+*/
+
+/*
+  || Primary Navigation
+*/
+
+nav.navigation a {
+  color: var(--sidebar-link-color);
+  font-weight: bold;
+}
+
+nav.navigation ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+nav.navigation ul li {
+  border-radius: 8px;
+  color: var(--sidebar-color);
+  font-size: var(--sidebar-navigation-font-size);
+  margin: 0.375em 0;
+  padding: 1em;
+  transition: all 0.5s ease-in-out;
+}
+
+nav.navigation ul li:hover,
+nav.navigation ul li.active {
+  background-color: var(--sidebar-navigation-hover-color);
+  cursor: pointer;
+}
+
+/*
+  || Secondary Navigation
+*/
+
+nav.secondary-navigation a {
+  color: var(--header-link-color);
+  font-weight: bold;
+}
+
+nav.secondary-navigation a:hover {
+  color: var(--header-link-hover-color);
+}
+
+nav.secondary-navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+nav.secondary-navigation ul li {
+  font-size: var(--header-navigation-font-size);
+  margin-left: 20px;
+}

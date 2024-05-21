@@ -1,0 +1,22 @@
+/*
+---------------------------------------------------
+  MAIN
+---------------------------------------------------
+*/
+
+main {
+  background-color: var(--main-background-color);
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0.875em;
+}
+
+/* Medium devices and up (landscape tablets, laptops, desktops, large laptops and etc) */
+@media all and (min-width: 768px) {
+  main {
+    min-height: 80vh;
+    order: 2;
+    width: 14em;
+  }
+}

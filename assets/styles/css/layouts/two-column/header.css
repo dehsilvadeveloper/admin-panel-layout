@@ -1,0 +1,52 @@
+/*
+---------------------------------------------------
+  HEADER
+---------------------------------------------------
+*/
+
+header {
+  align-items: center;
+  background-color: var(--header-background-color);
+  color: var(--header-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.625em;
+}
+
+header h1 {
+  color: var(--header-color);
+  font-size: 2em;
+}
+
+header .box-brand {
+  color: var(--brand-color);
+  flex-basis: auto;
+  margin-bottom: 10px;
+}
+
+header .box-brand .brand {
+  color: var(--brand-color);
+  font-size: var(--brand-font-size);
+  font-family: var(--brand-font-family);
+}
+
+header .box-brand .brand::first-letter {
+  font-size: 2rem;
+  color: var(--brand-first-letter-color);
+}
+
+/* Medium devices and up (landscape tablets, laptops, desktops, large laptops and etc) */
+@media all and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  header .box-brand {
+    flex-basis: 13em;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+/*
+---------------------------------------------------
+  CARDS
+---------------------------------------------------
+*/
+
+/*
+  || Card deck and cards
+*/
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.25em;
+  justify-content: space-between;
+  margin-bottom: 1.25em;
+}
+
+.card-deck .card {
+  background-color: var(--card-background-color);
+  border-radius: 0.625em;
+  flex: 1 0 0%;
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+.card-deck .card .card-body {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-deck .card .card-body .card-content {
+  padding: 1em;
+}
+
+.card-deck .card .card-body .card-icon-space {
+  font-size: 1.75em;
+  min-width: 90px;
+  opacity: 0.6;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Medium devices and up (landscape tablets, laptops, desktops, large laptops and etc) */
+@media all and (min-width: 768px) {
+  .card-deck {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5em;
+  }
+}

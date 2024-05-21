@@ -1,0 +1,58 @@
+/*
+---------------------------------------------------
+  TABLES
+---------------------------------------------------
+*/
+
+/*
+  || Simple table
+*/
+
+.simple-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.simple-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.simple-table thead {
+  background-color: var(--table-thead-background-color);
+  color: var(--table-thead-color);
+}
+
+.simple-table thead th {
+  padding: 0.938em;
+  text-align: left;
+}
+
+.simple-table tbody {
+  background-color: var(--table-tbody-background-color);
+}
+
+.simple-table tbody tr:nth-child(even) {
+  background-color: var(--table-tbody-tr-even-background-color);
+}
+
+.simple-table tbody tr:hover {
+  cursor: pointer;
+  background-color: var(--table-tbody-tr-hover-background-color);
+}
+
+.simple-table tbody td {
+  color: #333333;
+  font-size: 0.875em;
+  padding: 0.938em;
+}
+
+.simple-table tfoot {
+  background-color: var(--table-tfoot-background-color);
+  color: var(--table-tfoot-color);
+  font-weight: bold;
+}
+
+.simple-table tfoot tr td {
+  padding: 0.938em;
+}

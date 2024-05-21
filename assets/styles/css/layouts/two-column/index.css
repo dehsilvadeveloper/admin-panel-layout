@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*
+Vendors
+- CSS from external libraries and frameworks
+*/
+@import "../../vendors/imported-fonts.css";
+
+/*
+Abstracts
+- Tools and helpers
+*/
+@import "../../abstracts/variables.css";
+
+/*
+Base
+- Standard styles for common elements
+*/
+@import "../../base/reset.css";
+@import "../../base/base.css";
+@import "../../base/helpers.css";
+
+/* 
+Components
+- For small, reusable pieces 
+*/
+@import "../../components/badges.css";
+@import "../../components/cards.css";
+@import "../../components/section-boxes.css";
+@import "../../components/tables.css";
+
+/*
+Layout
+- Everything that takes part in the organization of elements of the application
+*/
+@import "header.css";
+@import "navigations.css";
+@import "sidebar.css";
+@import "main.css";
+@import "footer.css";
+
+/*
+Layout Definition
+*/
+.two-column-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Medium devices and up (landscape tablets, laptops, desktops, large laptops and etc) */
+@media all and (min-width: 768px) {
+  .two-column-layout {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

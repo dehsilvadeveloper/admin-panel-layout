@@ -1,0 +1,67 @@
+/*
+---------------------------------------------------
+  HELPERS
+---------------------------------------------------
+*/
+
+/*
+  || Colors for background
+*/
+
+.bg-blue {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+.bg-dark-blue {
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+.bg-green {
+  background-color: #16a085;
+  color: #ffffff;
+}
+
+.bg-light-gray {
+  background-color: #bdc3c7;
+  color: #333333;
+}
+
+.bg-orange {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+
+.bg-purple {
+  background-color: #8e44ad;
+  color: #ffffff;
+}
+
+.bg-red {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+/*
+  || Containers
+*/
+
+.container {
+  background-color: var(--container-background-color);
+  border-radius: 0.625em;
+  padding: 1em;
+
+  &:not(:last-child)  {
+    margin-bottom: 1.25em;
+  }
+}
+
+/*
+  || Text
+*/
+
+.sideways-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}

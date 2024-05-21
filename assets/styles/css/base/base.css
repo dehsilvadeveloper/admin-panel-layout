@@ -1,0 +1,40 @@
+/*
+---------------------------------------------------
+  BASIC STYLES
+---------------------------------------------------
+*/
+
+html,
+body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--base-background-color);
+  color: var(--base-color);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: var(--base-font-size);
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+/* Fallback for the cases when DVH is not available */
+@supports not (height: 100dvh) {
+  body {
+    height: 100vh;
+  }
+}
