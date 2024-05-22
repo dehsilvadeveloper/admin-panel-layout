@@ -32,6 +32,15 @@ p {
   }
 }
 
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+button, select {
+  text-transform: none;
+}
+
 /* Fallback for the cases when DVH is not available */
 @supports not (height: 100dvh) {
   body {
