@@ -358,7 +358,7 @@
               <div class="form-group">
                 <label for="readonly-info">Readonly Info</label>
                 <input type="text" class="input" id="readonly-info" autocomplete="off" placeholder="Readonly info here…" readonly />
-                <small id="passwordHelpBlock" class="form-text text-muted">
+                <small id="readonly-info-help-block" class="text-muted">
                   This is a example of a readonly field. It cannot receive data, having the purpose of only show information.
                 </small>
               </div>
@@ -368,7 +368,7 @@
               <div class="form-group">
                 <label for="disabled-field">Disabled Field</label>
                 <input type="text" class="input disabled" id="disabled-field" autocomplete="off" placeholder="Disabled field" disabled />
-                <small id="passwordHelpBlock" class="form-text text-muted">
+                <small id="disabled-field-help-block" class="text-muted">
                   This is a example of a disabled field. It can be enabled if the class "disabled" is removed.
                 </small>
               </div>
@@ -376,10 +376,17 @@
 
             <div class="form-row single-group">
               <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea class="textarea" id="comments" rows="3" placeholder="Include your comments"></textarea>
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
                 <input type="checkbox" id="sample-checkbox" />
-                  <label for="sample-checkbox">
-                    Check me out
-                  </label>
+                <label for="sample-checkbox">
+                  Check me out
+                </label>
               </div>
             </div>
 

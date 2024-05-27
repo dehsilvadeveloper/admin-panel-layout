@@ -5,26 +5,6 @@
 */
 
 /*
-  || Inputs States
-*/
-
-.input.disabled, .input:disabled {
-  background-color: #e9ecef;
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.input.disabled:focus, .input:disabled:focus {
-  border: 2px solid #ced4da;
-  opacity: 0.5;
-}
-
-.input.readonly, .input:not(:disabled):read-only {
-  background-color: #e9ecef;
-  opacity: 1;
-}
-
-/*
   || Inputs
 */
 
@@ -39,6 +19,28 @@
 }
 
 .input:focus {
+  border-color: var(--input-focus-border-color);
+  border-width: 2px;
+  opacity: 1;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/*
+  || Textareas
+*/
+
+.textarea {
+  border: 2px solid #ced4da;
+  border-radius: 0.25rem;
+  line-height: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.textarea:focus {
   border-color: var(--input-focus-border-color);
   border-width: 2px;
   opacity: 1;
@@ -67,4 +69,24 @@
   opacity: 1;
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+/*
+  || Inputs States
+*/
+
+.input.disabled, .input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.input.disabled:focus, .input:disabled:focus {
+  border: 2px solid #ced4da;
+  opacity: 0.5;
+}
+
+.input.readonly, .input:not(:disabled):read-only {
+  background-color: #e9ecef;
+  opacity: 1;
 }
