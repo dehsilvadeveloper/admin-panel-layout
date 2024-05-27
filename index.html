@@ -279,31 +279,31 @@
 
           <h4 class="mt-20">Disabled</h4>
 
-          <button class="btn btn-danger disabled">
+          <button class="btn btn-danger disabled" disabled>
             Button
           </button>
 
-          <button class="btn btn-dark disabled">
+          <button class="btn btn-dark disabled" disabled>
             Button
           </button>
 
-          <button class="btn btn-info disabled">
+          <button class="btn btn-info disabled" disabled>
             Button
           </button>
 
-          <button class="btn btn-primary disabled">
+          <button class="btn btn-primary disabled" disabled>
             Button
           </button>
 
-          <button class="btn btn-secondary disabled">
+          <button class="btn btn-secondary disabled" disabled>
             Button
           </button>
 
-          <button class="btn btn-success disabled">
+          <button class="btn btn-success disabled" disabled>
             Button
           </button>
 
-          <button class="btn btn-warning disabled">
+          <button class="btn btn-warning disabled" disabled>
             Button
           </button>
         </div>
@@ -358,6 +358,19 @@
               <div class="form-group">
                 <label for="readonly-info">Readonly Info</label>
                 <input type="text" class="input" id="readonly-info" autocomplete="off" placeholder="Readonly info here…" readonly />
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  This is a example of a readonly field. It cannot receive data, having the purpose of only show information.
+                </small>
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
+                <label for="disabled-field">Disabled Field</label>
+                <input type="text" class="input disabled" id="disabled-field" autocomplete="off" placeholder="Disabled field" disabled />
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  This is a example of a disabled field. It can be enabled if the class "disabled" is removed.
+                </small>
               </div>
             </div>
 

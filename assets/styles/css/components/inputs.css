@@ -8,12 +8,18 @@
   || Inputs States
 */
 
-.disabled, .input:disabled {
+.input.disabled, .input:disabled {
+  background-color: #e9ecef;
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.readonly, .input:read-only {
+.input.disabled:focus, .input:disabled:focus {
+  border: 2px solid #ced4da;
+  opacity: 0.5;
+}
+
+.input.readonly, .input:not(:disabled):read-only {
   background-color: #e9ecef;
   opacity: 1;
 }
