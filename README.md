@@ -38,6 +38,8 @@ git clone git@github.com:dehsilvadeveloper/admin-panel-layout.git
 ![ScreenShot](assets/images/readme/3.png)
 ![ScreenShot](assets/images/readme/4.png)
 ![ScreenShot](assets/images/readme/5.png)
+![ScreenShot](assets/images/readme/6.png)
+![ScreenShot](assets/images/readme/7.png)
 
 <!-- Badge Shields -->
 [html5-shield]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
