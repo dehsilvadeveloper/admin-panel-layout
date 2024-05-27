@@ -383,10 +383,79 @@
 
             <div class="form-row single-group">
               <div class="form-group">
-                <input type="checkbox" id="sample-checkbox" />
+                <input type="checkbox" class="checkbox" id="sample-checkbox" />
                 <label for="sample-checkbox">
                   Check me out
                 </label>
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group last-child">
+                <button class="btn-3d btn-info">
+                  Submit
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="container">
+          <h2 class="mb-20">Form Validation Sample</h2>
+
+          <form onsubmit="return false;">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="input is-invalid" id="username" autocomplete="off" placeholder="Username" />
+                <small class="invalid-feedback">
+                  Please provide a valid username.
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="username">Password</label>
+                <input type="password" class="input is-invalid" id="password" autocomplete="off" placeholder="Password" />
+                <small class="invalid-feedback">
+                  Please provide a valid password.
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="plan">Plan</label>
+                <select class="select is-invalid" id="plan">
+                  <option value="" selected>Choose...</option>
+                  <option value="1">Custom</option>
+                  <option value="2">Full</option>
+                  <option value="3">Lite</option>
+                </select>
+                <small class="invalid-feedback">
+                  You must select an option.
+                </small>
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
+                <label for="about">About</label>
+                <textarea class="textarea is-invalid" id="about" rows="3" placeholder="Include your profile"></textarea>
+                <small class="invalid-feedback">
+                  You must include your profile information.
+                </small>
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
+                <input type="checkbox" class="checkbox is-invalid" id="agree-terms-conditions" />
+                <label for="agree-terms-conditions">
+                  Agree to terms and conditions
+                </label>
+                <small class="invalid-feedback">
+                  You must agree before submitting.
+                </small>
               </div>
             </div>
 

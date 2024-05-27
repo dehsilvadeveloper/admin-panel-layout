@@ -90,3 +90,39 @@
   background-color: #e9ecef;
   opacity: 1;
 }
+
+/*
+  || Validation
+*/
+.input.is-invalid,
+.select.is-invalid,
+.textarea.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  display: none;
+}
+
+/* Display the invalid feedback information when the input/checkbox has the class "is-invalid" */
+.input.is-invalid + .invalid-feedback {
+  display: block;
+}
+
+.checkbox.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.select.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.textarea.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+/* Change the color from the adjacent label when the input has the class "is-invalid" */
+.checkbox.is-invalid + label {
+  color: #dc3545;
+}
