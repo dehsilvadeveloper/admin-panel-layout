@@ -1,0 +1,64 @@
+/*
+---------------------------------------------------
+  INPUTS
+---------------------------------------------------
+*/
+
+/*
+  || Inputs States
+*/
+
+.disabled, .input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.readonly, .input:read-only {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+/*
+  || Inputs
+*/
+
+.input {
+  border: 2px solid #ced4da;
+  border-radius: 0.25rem;
+  line-height: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.input:focus {
+  border-color: var(--input-focus-border-color);
+  border-width: 2px;
+  opacity: 1;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/*
+  || Selects
+*/
+
+.select {
+  border: 2px solid #ced4da;
+  border-radius: 0.25rem;
+  line-height: 1.25rem;
+  padding-bottom: 0.475rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.475rem;
+  width: 100%;
+}
+
+.select:focus {
+  border-color: var(--input-focus-border-color);
+  border-width: 2px;
+  opacity: 1;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}

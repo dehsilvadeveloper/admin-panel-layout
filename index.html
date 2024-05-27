@@ -155,9 +155,7 @@
         </div>
 
         <div class="container">
-          <h2>Form Components Sample</h2>
-
-          <h3 class="mt-20 text-uppercase">Buttons</h3>
+          <h2>Form Buttons Sample</h2>
 
           <h4 class="mt-20">Simple</h4>
 
@@ -308,6 +306,79 @@
           <button class="btn btn-warning disabled">
             Button
           </button>
+        </div>
+
+        <div class="container">
+          <h2 class="mb-20">Form Sample</h2>
+
+          <form onsubmit="return false;">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="input" id="firstname" autocomplete="off" placeholder="First name" />
+              </div>
+
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="input" id="lastname" autocomplete="off" placeholder="Last name" />
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="input" id="address" autocomplete="off" placeholder="Address" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="input" id="city" autocomplete="off" placeholder="City" />
+              </div>
+
+              <div class="form-group">
+                <label for="state">State</label>
+                <select class="select" id="state">
+                  <option value="" selected>Choose...</option>
+                  <option value="1">Minas Gerais</option>
+                  <option value="2">Rio de Janeiro</option>
+                  <option value="3">Paraná</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="zip">Zip</label>
+                <input type="text" class="input" id="zip" autocomplete="off" placeholder="Zip" />
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
+                <label for="readonly-info">Readonly Info</label>
+                <input type="text" class="input" id="readonly-info" autocomplete="off" placeholder="Readonly info here…" readonly />
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group">
+                <input type="checkbox" id="sample-checkbox" />
+                  <label for="sample-checkbox">
+                    Check me out
+                  </label>
+              </div>
+            </div>
+
+            <div class="form-row single-group">
+              <div class="form-group last-child">
+                <button class="btn-3d btn-info">
+                  Submit
+                </button>
+              </div>
+            </div>
+
+          </form>
         </div>
       </main>
 

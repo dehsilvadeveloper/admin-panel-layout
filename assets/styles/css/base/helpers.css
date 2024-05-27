@@ -58,8 +58,20 @@
 }
 
 /*
+  || Display of elements
+*/
+
+.display-block {
+  display: block;
+}
+
+/*
   || Margins
 */
+
+.mb-auto {
+  margin-bottom: auto;
+}
 
 .mb-20 {
   margin-bottom: 20px;
@@ -67,6 +79,13 @@
 
 .mt-20 {
   margin-top: 20px;
+}
+
+/*
+  || Size of elements
+*/
+.full-width {
+  width: 100%;
 }
 
 /*
